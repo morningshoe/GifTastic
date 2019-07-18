@@ -1,9 +1,11 @@
 // Initial array of movies
-var movies = ["The Matrix", "The Notebook", "Mr. Nobody", "The Lion King"];
+var movies = ["The Matrix", "Terminator", "Dirty Rotten Scoundrels", "The Lion King", "Saving Private Ryan", "Lord of the Rings", 
+              "Scott Pilgrim", "Hot Fuzz", "Shawn of the Dead", "The Avengers", "The Godfather"];
 
 // Function for dumping the JSON content for each button into the div
 function displayMovieGif() {
 
+  $("#movies-view").empty();
   var movie = $(this).attr("data-name");
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
   movie + "&api_key=wt7bOsQ6wCxLn0MkwC7AGYQG3xz7BXaN&limit=10";

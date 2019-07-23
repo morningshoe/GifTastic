@@ -24,7 +24,7 @@ function displayMovieGif() {
       if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
         // Creating a div for the gif
         var gifDiv = $("<div>");
-        
+        gifDiv.attr({"class": "gif"})
         // Storing the result item's rating
         var rating = results[i].rating;
         
@@ -41,7 +41,7 @@ function displayMovieGif() {
           "src": results[i].images.fixed_height_still.url,
           "data-still": results[i].images.fixed_height_still.url,
 				  "data-animate": results[i].images.fixed_height.url,
-				  "data-state": "still",
+          "data-state": "still",
           "class": "gif"
         });
         // Appending the paragraph and personImage we created to the "gifDiv" div we created

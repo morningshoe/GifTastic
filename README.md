@@ -10,3 +10,5 @@
 * jQuery
 * HTML
 * CSS
+
+This application was created during Week 6 of the June 2019 UCLAX Full Stack Bootcamp
